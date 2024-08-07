@@ -352,27 +352,16 @@ class: top, left
 ---
 # Capítulo I - Métodos
 &lt;/br&gt;
-### Caracterização das condições ambientais: **fis/quim do solo**
+### Caracterização das condições ambientais: 
 
-- Coleta de solo
-- Análise: Laboratório de solos da UFV
-- PCA
+####- &lt;font color="brown"&gt;fis/quim do solo&lt;/font&gt;: PCA
 
+####- &lt;font color="blue"&gt;água no solo&lt;/font&gt;: Topographic wetness index (TWI) [Beven &amp; Kirkby (1979)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#b0055)
 
-.center[&lt;img width="32%" src="WhatsApp Image 2021-07-15 at 17.06.39.jpeg"/&gt;]
----
-# Capítulo I - Métodos
-&lt;/br&gt;
+.center[$TWI=ln(A_s/tan\beta)$]
 
-### Caracterização das condições ambientais: **água no solo**
+.center[&lt;img width="24%" src="WhatsApp Image 2021-07-15 at 17.06.39.jpeg"/&gt;&lt;img src="https://lh6.googleusercontent.com/proxy/220RSwMDKxuEkTPXfr53awUnrIJQUP2730u4iv4zd59t-s-YA25IkoKBSp0YlS4_375RCSZoroZVgLTrtEI-H6rFaGUbfXw0stI3Hw"&gt;]
 
-#### Topographic wetness index (TWI) [Beven &amp; Kirkby (1979)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#b0055)
-
-.center[
-`\(TWI=ln(A_s/tan\beta)\)`
-]
-
-.center[&lt;img src="https://lh6.googleusercontent.com/proxy/220RSwMDKxuEkTPXfr53awUnrIJQUP2730u4iv4zd59t-s-YA25IkoKBSp0YlS4_375RCSZoroZVgLTrtEI-H6rFaGUbfXw0stI3Hw"&gt;]
 ---
 # Capítulo I - Métodos
 &lt;/br&gt;
@@ -424,13 +413,13 @@ class: top, left
 &lt;/br&gt;
 ### Variável de estado proposta neste trabalho: **Acoplamento**
 
-#### - Correlação de Kendal entre séries de EVI2;
+#### - Correlação de Kendal entre séries de EVI2 e chuva;
 #### - Acoplamento = Maior resposta considerando atrasos em meses (0 a 6);
 #### - Lag: atraso para a maior resposta em meses.
 
 &lt;div class="figure" style="text-align: center"&gt;
-<div class="plotly html-widget html-fill-item" id="htmlwidget-a06944b6e7fde0811e53" style="width:800px;height:300px;"></div>
-<script type="application/json" data-for="htmlwidget-a06944b6e7fde0811e53">{"x":{"visdat":{"2f3d54bca1909":["function () ","plotlyVisDat"]},"cur_data":"2f3d54bca1909","attrs":{"2f3d54bca1909":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"lines","name":"Mean monthly EVI2","connectgaps":false,"color":["green4"],"inherit":true},"2f3d54bca1909.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"lines","name":"Mean monthly rainfall","connectgaps":false,"yaxis":"y2","color":["blue"],"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"A","xaxis":{"domain":[0,1],"automargin":true,"title":"Month"},"yaxis2":{"side":"right","overlaying":"y","title":"Mean monthly precipitation (mm)","showgrid":false,"zeroline":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"monthly_evi2"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["2019-02-01","2019-03-01","2019-04-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-12-01","2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-11-01","2024-01-01"],"y":[0.56609519814038334,0.37978896336464685,0.47385239869158763,0.4423287732732521,0.42682535093636575,0.41094002309541877,0.44388504779049814,0.47576732975347819,0.56675927734792031,0.63729073502319444,0.54061129577931832,0.52461496741118729,0.50965066022809702,0.3689102252134866,0.42322647722390844,0.44737206281095165,0.39197007762017344,0.41442342320862102,0.40714055678767797,0.46071049904787226,0.56963604831026726,0.52064547598970878,0.59195280487458213,0.54945699090139466,0.50240805400250854,0.45687682474552194,0.42848382948273545,0.43420928608851328,0.39016399507392324,0.43045467775640434,0.50344022650918008,0.57885862688704837,0.61322383987117923,0.40218825901168775,0.57454056193045266,0.51812782891339348,0.48240867249641428,0.44148043278764126,0.42255779847362279,0.23977372308728181,0.40605882582170438,0.42526643105246098,0.46840624563917027,0.60315593925958411,0.63740074814569692,0.59114972718555303,0.53810361588736988,0.48268607231273453,0.44596877875494884,0.40407184931551526,0.1233866752442604,0.43134630175782229,0.37494258215693693,0.56116899154743338,0.65133840087837935],"type":"scatter","mode":"lines","name":"Mean monthly EVI2","connectgaps":false,"marker":{"color":"rgba(0,139,0,1)","line":{"color":"rgba(0,139,0,1)"}},"textfont":{"color":"rgba(0,139,0,1)"},"error_y":{"color":"rgba(0,139,0,1)"},"error_x":{"color":"rgba(0,139,0,1)"},"line":{"color":"rgba(0,139,0,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2019-02-01","2019-03-01","2019-04-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-12-01","2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-11-01","2024-01-01"],"y":[201.76499176025391,99.429009437561035,154.67038083076477,83.388854026794434,110.50706577301025,40.229833602905273,115.02819442749023,292.30867004394531,153.50142274331301,98.500134944915771,176.99811363220215,101.51280069351196,30.64497184753418,59.142661094665527,140.95236030220985,167.75631117227022,347.40469528125641,99.458110332489014,182.79495117068291,101.42497973144054,160.06445217132568,219.64969444274902,123.72744750976562,137.0004358291626,83.563623428344727,194.03103828430176,177.53593254089355,45.809148788452148,79.634915351867676,202.01202297210693,110.16866898536682,115.65449142456055,136.50485229492188,189.28455567359924,86.198404312133789,213.09508323669434,127.86440014839172,249.02997541427612,178.21020113811301,86.718132972717285,176.05909538269043,79.346641667187214,88.812612533569336,135.13890933990479,118.38147211074829,179.55736541748047,225.10791492462158,62.237303733825684,115.22186684608459,180.00390434265137,195.84700775146484,78.938664436340332,404.03546047210693,443.0762939453125,208.34775733947754],"type":"scatter","mode":"lines","name":"Mean monthly rainfall","connectgaps":false,"yaxis":"y2","marker":{"color":"rgba(0,0,255,1)","line":{"color":"rgba(0,0,255,1)"}},"textfont":{"color":"rgba(0,0,255,1)"},"error_y":{"color":"rgba(0,0,255,1)"},"error_x":{"color":"rgba(0,0,255,1)"},"line":{"color":"rgba(0,0,255,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-178c80a622b44c943906" style="width:800px;height:295px;"></div>
+<script type="application/json" data-for="htmlwidget-178c80a622b44c943906">{"x":{"visdat":{"2f3d5619296e1":["function () ","plotlyVisDat"]},"cur_data":"2f3d5619296e1","attrs":{"2f3d5619296e1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"lines","name":"Mean monthly EVI2","connectgaps":false,"color":["green4"],"inherit":true},"2f3d5619296e1.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"lines","name":"Mean monthly rainfall","connectgaps":false,"yaxis":"y2","color":["blue"],"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"A","xaxis":{"domain":[0,1],"automargin":true,"title":"Month"},"yaxis2":{"side":"right","overlaying":"y","title":"Mean monthly precipitation (mm)","showgrid":false,"zeroline":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"monthly_evi2"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["2019-02-01","2019-03-01","2019-04-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-12-01","2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-11-01","2024-01-01"],"y":[0.56609519814038334,0.37978896336464685,0.47385239869158763,0.4423287732732521,0.42682535093636575,0.41094002309541877,0.44388504779049814,0.47576732975347819,0.56675927734792031,0.63729073502319444,0.54061129577931832,0.52461496741118729,0.50965066022809702,0.3689102252134866,0.42322647722390844,0.44737206281095165,0.39197007762017344,0.41442342320862102,0.40714055678767797,0.46071049904787226,0.56963604831026726,0.52064547598970878,0.59195280487458213,0.54945699090139466,0.50240805400250854,0.45687682474552194,0.42848382948273545,0.43420928608851328,0.39016399507392324,0.43045467775640434,0.50344022650918008,0.57885862688704837,0.61322383987117923,0.40218825901168775,0.57454056193045266,0.51812782891339348,0.48240867249641428,0.44148043278764126,0.42255779847362279,0.23977372308728181,0.40605882582170438,0.42526643105246098,0.46840624563917027,0.60315593925958411,0.63740074814569692,0.59114972718555303,0.53810361588736988,0.48268607231273453,0.44596877875494884,0.40407184931551526,0.1233866752442604,0.43134630175782229,0.37494258215693693,0.56116899154743338,0.65133840087837935],"type":"scatter","mode":"lines","name":"Mean monthly EVI2","connectgaps":false,"marker":{"color":"rgba(0,139,0,1)","line":{"color":"rgba(0,139,0,1)"}},"textfont":{"color":"rgba(0,139,0,1)"},"error_y":{"color":"rgba(0,139,0,1)"},"error_x":{"color":"rgba(0,139,0,1)"},"line":{"color":"rgba(0,139,0,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2019-02-01","2019-03-01","2019-04-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-12-01","2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-11-01","2024-01-01"],"y":[201.76499176025391,99.429009437561035,154.67038083076477,83.388854026794434,110.50706577301025,40.229833602905273,115.02819442749023,292.30867004394531,153.50142274331301,98.500134944915771,176.99811363220215,101.51280069351196,30.64497184753418,59.142661094665527,140.95236030220985,167.75631117227022,347.40469528125641,99.458110332489014,182.79495117068291,101.42497973144054,160.06445217132568,219.64969444274902,123.72744750976562,137.0004358291626,83.563623428344727,194.03103828430176,177.53593254089355,45.809148788452148,79.634915351867676,202.01202297210693,110.16866898536682,115.65449142456055,136.50485229492188,189.28455567359924,86.198404312133789,213.09508323669434,127.86440014839172,249.02997541427612,178.21020113811301,86.718132972717285,176.05909538269043,79.346641667187214,88.812612533569336,135.13890933990479,118.38147211074829,179.55736541748047,225.10791492462158,62.237303733825684,115.22186684608459,180.00390434265137,195.84700775146484,78.938664436340332,404.03546047210693,443.0762939453125,208.34775733947754],"type":"scatter","mode":"lines","name":"Mean monthly rainfall","connectgaps":false,"yaxis":"y2","marker":{"color":"rgba(0,0,255,1)","line":{"color":"rgba(0,0,255,1)"}},"textfont":{"color":"rgba(0,0,255,1)"},"error_y":{"color":"rgba(0,0,255,1)"},"error_x":{"color":"rgba(0,0,255,1)"},"line":{"color":"rgba(0,0,255,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 &lt;p class="caption"&gt;Exemplo acoplamento&lt;/p&gt;
 &lt;/div&gt;
 
@@ -528,6 +517,9 @@ Oliveira et al., (2021)
 ---
 # Capítulo I - Conclusão
 ## Hipótese: Tipos de vegetação coexistentes podem ser diferenciados pela resposta do verdor foliar à variação sazonal na precipitação.
+
+--
+
 #### - Tipos de vegetação distintos coexistem em paisagens tropicais.
 
 --
@@ -729,7 +721,7 @@ Oliveira et al., (2021)
 # Capítulo II - Métodos
 ## Resposta da vegetação à variação sazonal da chuva
 
-### Calculamos o acoplamento [(Cure et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#s0075) para cada ponto.
+### Calculamos o &lt;u&gt;acoplamento&lt;/u&gt; [(Cure et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#s0075) para cada ponto.
  #### - Resposta da vegetação: Maior acoplamento (0 a 4 meses)
  #### - Testamos diferenças entre grupos, tipos de vegetação, tipos fenológicos e biomas
  
@@ -796,7 +788,7 @@ Oliveira et al., (2021)
 --
 
 
-#### - As classes de brotamento foliar baseadas na florística representam mal as dinâmicas de verdor detectadas por sensoriamento remoto;
+#### - As classes de brotamento foliar baseadas na florística representam &lt;u&gt;mal&lt;/u&gt; as dinâmicas de verdor detectadas por sensoriamento remoto;
 
 --
 
@@ -811,7 +803,6 @@ Oliveira et al., (2021)
 
 
 ### - O acoplamento depende dos regime climático onde a comunidade está inserida.
-
 
 ---
 # Considerações Finais

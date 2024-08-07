@@ -296,27 +296,16 @@ class: top, left
 ---
 # Capítulo I - Métodos
 </br>
-### Caracterização das condições ambientais: **fis/quim do solo**
+### Caracterização das condições ambientais: 
 
-- Coleta de solo
-- Análise: Laboratório de solos da UFV
-- PCA
+####- <font color="brown">fis/quim do solo</font>: PCA
 
+####- <font color="blue">água no solo</font>: Topographic wetness index (TWI) [Beven & Kirkby (1979)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#b0055)
 
-.center[<img width="32%" src="WhatsApp Image 2021-07-15 at 17.06.39.jpeg"/>]
----
-# Capítulo I - Métodos
-</br>
+.center[$TWI=ln(A_s/tan\beta)$]
 
-### Caracterização das condições ambientais: **água no solo**
+.center[<img width="24%" src="WhatsApp Image 2021-07-15 at 17.06.39.jpeg"/><img src="https://lh6.googleusercontent.com/proxy/220RSwMDKxuEkTPXfr53awUnrIJQUP2730u4iv4zd59t-s-YA25IkoKBSp0YlS4_375RCSZoroZVgLTrtEI-H6rFaGUbfXw0stI3Hw">]
 
-#### Topographic wetness index (TWI) [Beven & Kirkby (1979)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#b0055)
-
-.center[
-$TWI=ln(A_s/tan\beta)$
-]
-
-.center[<img src="https://lh6.googleusercontent.com/proxy/220RSwMDKxuEkTPXfr53awUnrIJQUP2730u4iv4zd59t-s-YA25IkoKBSp0YlS4_375RCSZoroZVgLTrtEI-H6rFaGUbfXw0stI3Hw">]
 ---
 # Capítulo I - Métodos
 </br>
@@ -368,11 +357,11 @@ $TWI=ln(A_s/tan\beta)$
 </br>
 ### Variável de estado proposta neste trabalho: **Acoplamento**
 
-#### - Correlação de Kendal entre séries de EVI2;
+#### - Correlação de Kendal entre séries de EVI2 e chuva;
 #### - Acoplamento = Maior resposta considerando atrasos em meses (0 a 6);
 #### - Lag: atraso para a maior resposta em meses.
 
-```{r figure2, include=TRUE, echo=FALSE, out.width=800,out.height=300,fig.dim=50, fig.align='center', fig.cap="Exemplo acoplamento"}
+```{r figure2, include=TRUE, echo=FALSE, out.width=800,out.height=295,fig.dim=40, fig.align='center', fig.cap="Exemplo acoplamento"}
 library(tidyverse)
 
 data <- read_rds("/home/mcure/Documents/IFFSC/dados_completos.rds")
@@ -487,6 +476,9 @@ Oliveira et al., (2021)
 ---
 # Capítulo I - Conclusão
 ## Hipótese: Tipos de vegetação coexistentes podem ser diferenciados pela resposta do verdor foliar à variação sazonal na precipitação.
+
+--
+
 #### - Tipos de vegetação distintos coexistem em paisagens tropicais.
 
 --
@@ -688,7 +680,7 @@ $EVI_2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)$
 # Capítulo II - Métodos
 ## Resposta da vegetação à variação sazonal da chuva
 
-### Calculamos o acoplamento [(Cure et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#s0075) para cada ponto.
+### Calculamos o <u>acoplamento</u> [(Cure et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#s0075) para cada ponto.
  #### - Resposta da vegetação: Maior acoplamento (0 a 4 meses)
  #### - Testamos diferenças entre grupos, tipos de vegetação, tipos fenológicos e biomas
  
@@ -755,7 +747,7 @@ $EVI_2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)$
 --
 
 
-#### - As classes de brotamento foliar baseadas na florística representam mal as dinâmicas de verdor detectadas por sensoriamento remoto;
+#### - As classes de brotamento foliar baseadas na florística representam <u>mal</u> as dinâmicas de verdor detectadas por sensoriamento remoto;
 
 --
 
@@ -770,7 +762,6 @@ $EVI_2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)$
 
 
 ### - O acoplamento depende dos regime climático onde a comunidade está inserida.
-
 
 ---
 # Considerações Finais
