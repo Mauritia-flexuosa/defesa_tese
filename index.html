@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Estados funcionais da vegetação neotropical e a heterogeneidade das respostas fenológicas à sazonalidade da chuva</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Orientadora: Profª Drª Marina Hirota - Coorientador: Dr Bernardo Monteiro Flores" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/uo.css" rel="stylesheet" />
+    <link href="libs/remark-css/rutgers-fonts.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <link href="libs/htmltools-fill/fill.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/plotly-binding/plotly.js"></script>
+    <script src="libs/typedarray/typedarray.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link href="libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="libs/plotly-main/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="marcio.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Estados funcionais da vegetação neotropical e a heterogeneidade das respostas fenológicas à sazonalidade da chuva
+]
+.subtitle[
+## Marcio Baldissera Cure
+]
+.author[
+### Orientadora: Profª Drª Marina Hirota - Coorientador: Dr Bernardo Monteiro Flores
+]
+.institute[
+### PPG Ecologia, UFSC
+]
+.date[
+### 08-08-2024`
+]
+
+---
+
+class: top, left
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(https://ipes.ufsc.br/wp-content/themes/ipes-v1/images/logotipo.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+
+
+
+
+
+
+
+# Sumário
+
+&lt;/br&gt;
+### 1. INTRODUÇÃO
+- Contextualização
+
+&lt;/br&gt;
+--
+
+### 2. CAPÍTULO I:  Vegetation-rainfall coupling as an indicator of ecosystem state in a heterogeneous landscape [(Cure et al. ,2023)](https://doi.org/10.1016/j.ecolind.2023.111268).
+
+
+&lt;/br&gt;
+--
+
+### 3. CAPÍTULO II: Unravelling distinct leaf phenologies in tropical vegetation types
+
+&lt;/br&gt;
+--
+
+###4. CONSIDERAÇÕES FINAIS
+
+.center[&lt;img width="33%" src=""/&gt;
+]
+
+---
+# Introdução 
+## Ecossistemas são sistemas complexos
+
+- Elementos bióticos e abióticos interagindo;
+- Propriedades emergentes;
+
+
+.center[
+&lt;img width="100%" src="Fig1.png"/&gt;
+*Exemplos de ecossistemas*
+  ]
+---
+# Introdução
+##Variável de estado
+&lt;/br&gt;
+### Por exemplo: Cobertura do dossel como uma variável que dá identidade ao sistema.
+
+.center[
+&lt;img width="45%" src="https://cdn.britannica.com/52/104452-004-A5AB4938/Serengeti-Plain-Africa-feature-savanna-biome-example.jpg?w=400&amp;h=300&amp;c=crop"/&gt;&lt;img width="50%" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Aerial_view_of_the_Amazon_Rainforest.jpg"/&gt;
+
+Exemplo: Savanas e florestas.]
+
+---
+# Intrudução
+##Sistemas são dinâmicos 
+
+- Mudanças graduais;
+- Mudanças não-lineares;
+- Mudanças abruptas com histerese: apresenta estados alternativos 
+&lt;/br&gt;
+
+.center[
+&lt;img width="107%" src="Fig6.png"/&gt;
+]
+&lt;br&gt;
+&lt;br&gt;
+[Scheffer e Carpenter, 2003](https://doi.org/10.1016/j.tree.2003.09.002)
+---
+# Introdução
+##Mecanismos de auto-organização
+
+- Balanço entre os __feedbacks__ &lt;font color = "blue"&gt;positivos&lt;/font&gt; e &lt;font color = "red"&gt;negativos&lt;/font&gt;;
+- Mantém/alteram identidade e propriedades emergentes.
+
+--
+
+.center[
+&lt;img width="40%" src="https://media.cheggcdn.com/media%2F1bb%2F1bb4e194-edf8-4354-b08c-82ee5ae048e7%2Fphppfou47.png"/&gt;&lt;img width="60%" src="Fig7.png"/&gt;
+]
+[Flores &amp; Staal (2022)](); [Hoffmann &amp; Jackson (2000)](); [Pausas &amp; bond (2021)]()
+
+---
+# Resiliência
+
+- Maneira de olhar para a dinâmica dos sistemas;
+- Parte do pressuposto da existência de estados alternativos de funcionamento;
+
+- **Definição:** Capacidade dos sistemas de absorver impactos antes de mudar para um estado alternativo ([Holling, 1973]());
+
+
+
+.center[
+&lt;img width="70%" src="Fig8.png"/&gt;
+]
+
+Ex.: Florestas e savannas são estados alternativos definidos parcialmente pelo regime de chuvas [Hirota et al., 2011]().
+
+---
+# Mecanismos de regulação hídrica
+&lt;/br&gt;
+### - Evitar falha hidráulica;
+### - Diferentes estratégias
+### - Determinado pela disponibilidade de recursos.
+
+.center[
+&lt;img width="50%" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41477-019-0390-3/MediaObjects/41477_2019_390_Figa_HTML.jpg?as=webp"&gt;&lt;img width="50%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dry_Forest_Theppakadu_Mudumalai_Mar21_A7C_00505.jpg/800px-Dry_Forest_Theppakadu_Mudumalai_Mar21_A7C_00505.jpg?20210331140115"&gt;
+  ]
+
+[Oliveira et al., 2021](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17266)
+&lt;/br&gt;[Brodribb &amp; Holbrook (2003)](https://nph.onlinelibrary.wiley.com/doi/full/10.1046/j.1469-8137.2003.00736.x)&lt;/br&gt;[Slelton et al., 2015]()
+---
+# Fenologia foliar
+&lt;/br&gt;
+## Proxy para o funcionamento da vegetação
+### - Ciclos biológicos impulsionados por variações sazonais no ambiente
+
+### - Indicador da variação anual da produtividade primária
+
+### - Decíduas e sempre verdes
+
+.center[
+&lt;img width="70%" src="https://images.squarespace-cdn.com/content/v1/58a1ff6117bffc275689252e/1576887075653-18D8IPKYNF6S9H2N9NXE/Phenology+Tree+Image.jpg?format=1500w"&gt;
+]
+---
+# Lacuna do conhecimento
+***
+&lt;/br&gt;
+### Nenhum estudo até o momento caracterizou de forma abrangente os estados funcionais da vegetação em escala local e continental.
+
+
+---
+# Objetivo geral
+***
+&lt;/br&gt;
+###Entender a resiliência da vegetação tropical brasileira em um contexto de mudanças, com base na caracterização dos estados funcionais da vegetação e sua resposta fenológica à variação sazonal da chuva, considerando fatores ambientais em escala local e continental.
+
+.center[
+&lt;img width="60%" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10021-021-00654-4/MediaObjects/10021_2021_654_Figa_HTML.jpg?as=webp"&gt;
+
+Foto de Rafael Oliveira]
+
+---
+
+# Objetivos específicos
+***
+&lt;/br&gt;
+### **Capítulo I**: Diferenciar funcionalmente os tipos de vegetação coexistentes em uma mesma paisagem do Cerrado; e
+
+&lt;/br&gt;
+--
+
+### **Capítulo II**: Testar se na escala continental a resposta de florestas e savanas, entre tipos decíduos, sempre verdes e de semidecíduos em relação à variação sazonal da chuva são influenciados pelo regime climático de larga escala.
+---
+
+# Capítulo I: 
+***
+&lt;/br&gt;
+### **Capítulo I**: Trata dos estados funcionais da vegetação na escala de paisagem.
+
+
+.center[
+&lt;img width="80%" src="capI.png"&gt;
+]
+
+---
+.center[&lt;img width="90%" src="pncv.jpeg"&gt;
+
+*Vereda no Jardim de Maythrea - PNCV*]
+
+
+---
+# Capítulo I - Introdução
+## Savanas e Florestas na região tropical
+
+- São estados alternativos em termos de estrutura da vegetação (cobertura do dossel) determinados parcialmente pela PMA. 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="hirota.jpg" alt="Hirota et al (2011) Science" width="100%" /&gt;
+&lt;p class="caption"&gt;Hirota et al (2011) Science&lt;/p&gt;
+&lt;/div&gt;
+---
+class: top, left
+# Capítulo I - Introdução
+## Sob o mesmo regime de precipitação...
+
+- __Savannas__ e __florestas__ dividem a mesma paisagem e sua distribuição é determinada pelo regime de fogo, disponibilidade de água e características do solo.  
+
+
+...que são determinados pelos Feedbacks entre a vegetação e o meio abiótico. (Frequentemente baseado na estrutura da vegetação)
+
+.center[ &lt;img width="48%" src="Fig3.png"&gt;
+
+*Staal &amp; Flores (2015)*]
+
+*Ferreira et al (2007); Dantas et al (2016); Veenendaal et al (2018); Pausas et al (2020); Bernardino et al (2021)*
+
+---
+# Capítulo I - Introdução
+
+## Há diferentes tipos funcionais de Florestas
+
+- Por exemplo, **matas secas** e **matas de galeria**.
+
+.center[
+&lt;img width="62%" src="https://images-provider.frontiersin.org/api/ipx/w=290&amp;f=webp/https://www.frontiersin.org/files/Articles/391790/fevo-06-00104-HTML-r1/image_m/fevo-06-00104-g001.jpg"&gt;
+
+*Dexter et al., 2018*
+  ]
+  
+---
+# Capítulo I - Introdução
+## Relação entre estrutura e funcionamento
+
+
+&lt;h4&gt;
+ Estudos sugerem que o funcionamento da vegetação seja correspondente à estrutura. (Dantas et al 2015; Xu et al 2016; Bernardino et al 2021)
+&lt;/h4&gt;
+
+####  (Área basal, BT, Altura da árvores, como proxy da funcionalidade).
+
+
+.center[
+&lt;img width="45%" src="xu20161.png"/&gt;
+]
+
+---
+class: top, left
+# Capítulo I - Introdução
+## Produtividade primária como um proxy do funcionamento da vegetação
+
+
+#### Produção primária bruta é uma função básica para os ecossistemas e pode ser inferida por índices derivados de imagens de satélite *Biudes et al (2021)*.
+
+.center[
+&lt;img width="70%" src="biudes2021.png"&gt;
+]
+
+---
+# Capítulo I
+## Pergunta:
+
+### Matas secas, matas de galeria e savanas podem ser diferenciados funcionalmente com base na resposta espectral da vegetação à variação sazonal na chuva?
+
+## Hipótese:
+### Esperamos que o acoplamento entre o verdor foliar e a chuva possam diferenciar os tipos de vegetação e refletem diferentes estratégias dependentes das condições ambientais locais.
+
+---
+# Capítulo I - Métodos
+### Área de estudo
+- Parque Nacional da Chapada dos Veadeiros
+- 30 parcelas de 200m²
+- &lt;font color="purple"&gt;Mata seca&lt;/font&gt;, &lt;font color="blue"&gt;Mata de Galeria&lt;/font&gt; e &lt;font color="orange"&gt;Cerrado &lt;i&gt;stricto sensu&lt;/i&gt;&lt;/font&gt;
+
+.center[&lt;img width = "100%" src="Figure_1_1.png"&gt;]
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+### Usamos dados de campo e de satélite para caracterizar as condições ambientais e os estados da vegetação.
+&lt;/br&gt;
+.center[&lt;img width = "50%" src="campo.jpeg"&gt;&lt;img width = "50%" src="gee.png"&gt;]
+
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+### Caracterização das condições ambientais: **fis/quim do solo**
+
+- Coleta de solo
+- Análise: Laboratório de solos da UFV
+- PCA
+
+
+.center[&lt;img width="32%" src="WhatsApp Image 2021-07-15 at 17.06.39.jpeg"/&gt;]
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+
+### Caracterização das condições ambientais: **água no solo**
+
+#### Topographic wetness index (TWI) [Beven &amp; Kirkby (1979)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#b0055)
+
+.center[
+`\(TWI=ln(A_s/tan\beta)\)`
+]
+
+.center[&lt;img src="https://lh6.googleusercontent.com/proxy/220RSwMDKxuEkTPXfr53awUnrIJQUP2730u4iv4zd59t-s-YA25IkoKBSp0YlS4_375RCSZoroZVgLTrtEI-H6rFaGUbfXw0stI3Hw"&gt;]
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+### Caracterização do regime de chuva: **Série temporal de precipitação**
+
+
+#### Precipitação mensal do CHIRPS (resolução de ~ 5 Km)
+
+- MAP e MSI ([Markham, 1970]())
+&lt;/br&gt;
+.center[&lt;img width="70%" src="chirps.png"&gt;] 
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+### Variável de estado estrutural: **Cobertura do dossel**
+
+- Cobertura do dossel usando o densiômetro florestal côncavo;
+- Coleta nas estações seca e chuvosa;
+- `\(Deciduidade = TreeCover_c - TreeCover_s\)`
+
+.center[&lt;img width="60%" src="dens.jpeg"&gt;]
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+### Variáveis de estado estruturais/funcionais: **Atributos da vegetação**
+#### Obs.: Estas variáveis já foram usadas como proxy de funcionalidade
+- Altura das árvores (Xu et al., 2016);
+- Área basal (Dantas et al., 2015);
+- Espessura de casca (Bernardono et al, 2021).
+
+
+
+.center[ &lt;img width="32%" src="WhatsApp Image 2021-07-15 at 17.11.41.jpeg"/&gt;
+&lt;img width="32%" src="IMG_20190420_110336.jpg"/&gt;
+
+]
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+### Variáveis de estado funcionais: **Dados de satélite**
+
+- Landsat 8 (30m x 30m; a cada 16 dias; 2013-2018)
+- `\(EVI2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)\)`
+- Média, desvio padrão
+
+.center[&lt;img width="70%" src="https://adenilsongiovanini.com.br/blog/wp-content/uploads/2019/12/landsat-8-780x382.jpg"&gt;]
+---
+# Capítulo I - Métodos
+&lt;/br&gt;
+### Variável de estado proposta neste trabalho: **Acoplamento**
+
+#### - Correlação de Kendal entre séries de EVI2;
+#### - Acoplamento = Maior resposta considerando atrasos em meses (0 a 6);
+#### - Lag: atraso para a maior resposta em meses.
+
+&lt;div class="figure" style="text-align: center"&gt;
+<div class="plotly html-widget html-fill-item" id="htmlwidget-787d8c7db666b1e05070" style="width:800px;height:300px;"></div>
+<script type="application/json" data-for="htmlwidget-787d8c7db666b1e05070">{"x":{"visdat":{"2f3d563f42566":["function () ","plotlyVisDat"]},"cur_data":"2f3d563f42566","attrs":{"2f3d563f42566":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"lines","name":"Mean monthly EVI2","connectgaps":false,"color":["green4"],"inherit":true},"2f3d563f42566.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"lines","name":"Mean monthly rainfall","connectgaps":false,"yaxis":"y2","color":["blue"],"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"A","xaxis":{"domain":[0,1],"automargin":true,"title":"Month"},"yaxis2":{"side":"right","overlaying":"y","title":"Mean monthly precipitation (mm)","showgrid":false,"zeroline":false},"yaxis":{"domain":[0,1],"automargin":true,"title":"monthly_evi2"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["2019-02-01","2019-03-01","2019-04-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-12-01","2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-11-01","2024-01-01"],"y":[0.56609519814038334,0.37978896336464685,0.47385239869158763,0.4423287732732521,0.42682535093636575,0.41094002309541877,0.44388504779049814,0.47576732975347819,0.56675927734792031,0.63729073502319444,0.54061129577931832,0.52461496741118729,0.50965066022809702,0.3689102252134866,0.42322647722390844,0.44737206281095165,0.39197007762017344,0.41442342320862102,0.40714055678767797,0.46071049904787226,0.56963604831026726,0.52064547598970878,0.59195280487458213,0.54945699090139466,0.50240805400250854,0.45687682474552194,0.42848382948273545,0.43420928608851328,0.39016399507392324,0.43045467775640434,0.50344022650918008,0.57885862688704837,0.61322383987117923,0.40218825901168775,0.57454056193045266,0.51812782891339348,0.48240867249641428,0.44148043278764126,0.42255779847362279,0.23977372308728181,0.40605882582170438,0.42526643105246098,0.46840624563917027,0.60315593925958411,0.63740074814569692,0.59114972718555303,0.53810361588736988,0.48268607231273453,0.44596877875494884,0.40407184931551526,0.1233866752442604,0.43134630175782229,0.37494258215693693,0.56116899154743338,0.65133840087837935],"type":"scatter","mode":"lines","name":"Mean monthly EVI2","connectgaps":false,"marker":{"color":"rgba(0,139,0,1)","line":{"color":"rgba(0,139,0,1)"}},"textfont":{"color":"rgba(0,139,0,1)"},"error_y":{"color":"rgba(0,139,0,1)"},"error_x":{"color":"rgba(0,139,0,1)"},"line":{"color":"rgba(0,139,0,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2019-02-01","2019-03-01","2019-04-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-12-01","2021-01-01","2021-02-01","2021-03-01","2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01","2021-09-01","2021-10-01","2021-11-01","2021-12-01","2022-01-01","2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01","2022-07-01","2022-08-01","2022-09-01","2022-11-01","2022-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01","2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01","2023-11-01","2024-01-01"],"y":[201.76499176025391,99.429009437561035,154.67038083076477,83.388854026794434,110.50706577301025,40.229833602905273,115.02819442749023,292.30867004394531,153.50142274331301,98.500134944915771,176.99811363220215,101.51280069351196,30.64497184753418,59.142661094665527,140.95236030220985,167.75631117227022,347.40469528125641,99.458110332489014,182.79495117068291,101.42497973144054,160.06445217132568,219.64969444274902,123.72744750976562,137.0004358291626,83.563623428344727,194.03103828430176,177.53593254089355,45.809148788452148,79.634915351867676,202.01202297210693,110.16866898536682,115.65449142456055,136.50485229492188,189.28455567359924,86.198404312133789,213.09508323669434,127.86440014839172,249.02997541427612,178.21020113811301,86.718132972717285,176.05909538269043,79.346641667187214,88.812612533569336,135.13890933990479,118.38147211074829,179.55736541748047,225.10791492462158,62.237303733825684,115.22186684608459,180.00390434265137,195.84700775146484,78.938664436340332,404.03546047210693,443.0762939453125,208.34775733947754],"type":"scatter","mode":"lines","name":"Mean monthly rainfall","connectgaps":false,"yaxis":"y2","marker":{"color":"rgba(0,0,255,1)","line":{"color":"rgba(0,0,255,1)"}},"textfont":{"color":"rgba(0,0,255,1)"},"error_y":{"color":"rgba(0,0,255,1)"},"error_x":{"color":"rgba(0,0,255,1)"},"line":{"color":"rgba(0,0,255,1)"},"xaxis":"x","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+&lt;p class="caption"&gt;Exemplo acoplamento&lt;/p&gt;
+&lt;/div&gt;
+
+---
+# Capítulo I - Métodos
+### Testamos as diferenças entre os tipos de vegetação - **Teste de Mann-Whitney**
+
+#### - Variáveis de estado estruturais e funcionais;
+#### - Condições ambientais
+
+.center[&lt;img width="35%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Yi-qvTjseH5rPNfGTz1ple1EywaU7W0yJg&amp;s"&gt;]
+---
+# Capítulo I - Resultados e Discussão
+
+### Regime de chuva - Parcelas estão no mesmo regime de chuva.
+.center[&lt;img width="60%" src="chuva.png"&gt;
+Staver et al. (2011)
+]
+---
+# Capítulo I - Resultados e Discussão
+### Condições ambientais locais - PCA das variáveis do solo.
+
+.center[ &lt;img width="95%" src="pca_1.png"&gt;
+]
+
+---
+# Capítulo I - Resultados e Discussão
+### Condições ambientais locais - Tipos de vegetação diferem.
+.center[ &lt;img width="65%" src="https://ars.els-cdn.com/content/image/1-s2.0-S1470160X23014103-gr2.jpg"&gt;
+
+Ratter &amp; Dargie, 1992; Oliveira &amp; Marquis, 2002; Ribeiro &amp; Walter, 2008; Cowling &amp; Potts, 2015; Lira-Martins et al., 2022]
+
+
+
+
+---
+# Capítulo I - Resultados e Discussão
+&lt;/br&gt;
+### Variáveis de estado estruturais.
+
+.center[&lt;img width="85%" src="estruturais2.png"&gt;]
+
+Xu et al., (2015); Dantas et al., (2016); Bernardino et al., (2022)
+---
+# Capítulo I - Resultados e Discussão
+### Variáveis de estado funcionais 
+&lt;/br&gt;
+&lt;b&gt;&lt;font color="purple"&gt;Mata seca&lt;/font&gt;;
+&lt;font color="blue"&gt;Mata de Galeria&lt;/font&gt;;
+&lt;font color="orange"&gt;Savana&lt;/font&gt;&lt;/b&gt;
+
+&lt;/br&gt;
+.center[ &lt;img width="107%" src="Fig_3_1.png"&gt;
+]
+
+### Tipos de vegetação diferem funcionalmente.
+
+---
+# Capítulo I - Resultados e Discussão
+
+### Mata de galeria aumenta o greenness na estação seca;
+- Acesso perene à água (Veneklaas et al., 2005; Bueno et al., 2018);
+- Não é limitada por água e sim por luz (Green et al., 2020, Smith et al., 2020)
+.center[
+&lt;img width="50%" src="amazon_green.png"/&gt;    
+]
+---
+# Capítulo I - Resultados e Discussão
+
+### Matas secas perdem as folhas na estação seca
+&lt;/br&gt;&lt;/br&gt;
+.center[&lt;img width="100%" src="fig_rafa.png"/&gt;]
+
+Oliveira et al., (2021)
+---
+# Capítulo I - Resultados e Discussão
+### Árvores de savana não são sensíveis à diminuição da precipitação durante a estação seca;
+
+- Diversidade de estratégias de tolerância à seca;
+- Acesso à água (raizes);
+- Facilitação;
+- Controle da perda d'água
+
+.center[&lt;img width="50%" src="strategy1.png"/&gt;
+&lt;img width="49%" src="strategy2.png"/&gt;
+&lt;img width="48%" src="guiga.png"/&gt;
+&lt;img width="48%" src="bucci2008.png"/&gt;
+]
+---
+# Capítulo I - Resultados e Discussão
+### Variáveis de estado - Relação com a cobertura do dossel.
+.center[ &lt;img width="72%" src="Figure_4.png"&gt;
+]
+
+---
+# Capítulo I - Conclusão
+## Hipótese: Tipos de vegetação coexistentes podem ser diferenciados pela resposta do verdor foliar à variação sazonal na precipitação.
+#### - Tipos de vegetação distintos coexistem em paisagens tropicais.
+
+--
+
+#### - Tipos de vegetação coexistentes respondem de maneira diferente à variação sazonal das chuvas.
+
+--
+
+#### - Ecossistemas estruturalmente similares (florestas secas e de galeria) são - funcionalmente distintos.
+
+--
+
+#### - As respostas são parcialmente determinadas pela disponibilidade de nutrientes e água no solo.
+
+--
+
+#### - A relação entre a precipitação e o verdor foliar é um bom indicador dos estados funcionais da vegetação.
+
+
+
+---
+# Capítulo II: 
+***
+&lt;/br&gt;
+### **Capítulo II**: Testa se a resposta da vegetação na escala continental é influenciada pelo regime climático.
+
+## Unravelling distinct leaf phenologies in tropical vegetation types
+#### Marcio Baldissera Cure; Bernardo Monteiro Flores; Marina Hirota
+
+
+
+---
+# Capítulo II - Introdução
+&lt;/br&gt;
+
+### Partindo do &lt;u&gt;Capítulo I&lt;/u&gt; (Escala de paisagem):
+#### - Tipos de vegetação com funcionamento diferente coexistem;
+#### - Diferentes respostas denotam estratégias diferente para lidar com períodos de seca;
+#### - Acoplamento verdor foliar-chuva pode diferenciar os tipos de vegetação coexistentes, enquanto que as variáveis estruturais não conseguem.
+---
+# Capítulo II - Introdução
+&lt;/br&gt;
+###  A heterogeneidade da vegetação desafia o entendimento das respostas dos ecossistemas às variações ambientais.
+
+#### - Respostas são refletidas na fenologia foliar
+
+#### - Incerteza nas respostas da vegetação
+#### - Dificuldade de representar variação sazonal dos fluxos de água e carbono
+.center[&lt;img width="70%" src="restrepo.png"&gt;]
+---
+# Capítulo II - Introdução
+&lt;/br&gt;
+
+### Modelos se baseiam em características das plantas relativas à fenologia (e.g., PFTs);
+#### - Não levam em conta variabilidade intraespecífica (Albert et al., 2012)
+#### - Não levam em conta variabilidade ambiental
+
+.center[&lt;img width="79%" src="albert.png"&gt;]
+
+
+---
+# Capítulo II - Introdução
+## Pergunta 1:
+
+### A classificação da deciduidade da vegetação com base na florística  reflete a resposta espectral da vegetação às variações na chuva?
+
+## Hipótese 1:
+
+### Esperamos que exista uma heterogeneidade nas respostas devido à variabilidade intraespecífica e ambiental.
+
+.center[&lt;b&gt;&lt;font color="green"&gt;Sempre verdes&lt;/font&gt;&lt;/b&gt; - Acoplamento negativo
+
+&lt;font color="purple"&gt;&lt;b&gt;Decíduas&lt;/b&gt;&lt;/font&gt; - Acoplamento positivo
+
+&lt;font color="orange"&gt;&lt;b&gt;Semidecíduas&lt;/b&gt;&lt;/font&gt; - Respostas heterogêneas
+]
+
+---
+# Capítulo II - Introdução
+## Pergunta 2:
+### Existe relação entre a resposta espectral da vegetação com o regime climático?
+
+## Hipótese 2:
+### Esperamos que o acoplamento entre o verdor foliar e a chuva seja dependente do regime climático.
+
+&lt;b&gt;&lt;font = color="green"&gt;Acoplamento negativo&lt;/font&gt;&lt;/b&gt;: Alta MAP; Baixa sazonalidade; Baixo VPD
+
+&lt;b&gt;&lt;font color="purple"&gt;Acoplamento positivo&lt;/font&gt;&lt;/b&gt;: Baixa MAP; Alta sazonalidade; Alto VPD
+
+&lt;b&gt;&lt;font color="orange"&gt;Respostas heterogêneas&lt;/font&gt;&lt;/b&gt;: MAP, sazonalidade e VPD &lt;i&gt;intermediários&lt;/i&gt;
+
+---
+# Capítulo II - Métodos
+
+## Pontos de amostragem
+#### - Dados usados em [Dexter et al. (2018)](https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2018.00104/full)
+#### - 3990 pontos do [NeoTropTree database](http://www.neotroptree.info/)
+
+.center[&lt;img width="86%" src="neotrop.png"&gt;]
+
+---
+# Capítulo II - Métodos
+## Caracterização da vegetação: com base na composição de espécies
+
+- &lt;b&gt;&lt;font size="5" color="brown"&gt;Decídua&lt;/font&gt;&lt;/b&gt;
+- &lt;b&gt;&lt;font size="5" color="orange"&gt;Semidecídua&lt;/font&gt;&lt;/b&gt;
+- &lt;b&gt;&lt;font size="5" color="green"&gt;Sempre verde&lt;/font&gt;&lt;/b&gt;
+
+.center[&lt;img width="45%" src="https://images-provider.frontiersin.org/api/ipx/w=290&amp;f=webp/https://www.frontiersin.org/files/Articles/391790/fevo-06-00104-HTML-r1/image_m/fevo-06-00104-g001.jpg"&gt;]
+--
+ &lt;b&gt;Testar se essa classificação fenológica reflete a resposta espectral da vegetação.&lt;/b&gt;
+
+---
+# Capítulo II - Métodos
+
+## Dados espectrais
+#### - Sentinel 2 (10m x 10m; a cada 5 dias);
+#### - Calculamos o EVI2:
+`\(EVI_2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)\)`
+
+.center[&lt;img width="50%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sentinel_2-IMG_5873-white_%28crop%29.jpg/275px-Sentinel_2-IMG_5873-white_%28crop%29.jpg"&gt; 
+
+[Sentinel-2](https://en.wikipedia.org/wiki/Sentinel-2)]
+
+---
+# Capítulo II - Métodos
+
+## Seleção dos pontos de amostragem
+
+
+#### - Pontos com menos de 35% de valores faltantes ([Feng et al., 2021]());
+--
+
+#### - Completamos as séries com NAs usando interpolação linear;
+--
+
+
+#### - Selecionamos &lt;font color="green"&gt;Florestas&lt;/font&gt; e &lt;font color="orange"&gt;Savanas&lt;/font&gt; usando o [MapBiomas](http://mapbiomas.org) (n = 1037) 
+
+.center[&lt;img width="45%" src="mapa_methods.png"&gt;]
+---
+# Capítulo II - Métodos
+## Caracterização da vegetação: Dados espectrais
+
+### - Calculamos o &lt;u&gt;EVI2 médio para cada mês&lt;/u&gt; de 2019 até 2022; 
+
+--
+
+### ...e a partir daí, calculamos várias métricas:
+
+.left-side[
+&lt;list&gt;
+1. Média;
+2. Desvio padrão;
+3. Amplitude;
+4. Entropia;
+5. Mínimos;
+6. Máximos;
+7. Anomalia; e
+8. Ciclo anual (Média para cada mês).&lt;/list&gt;
+]
+##### PCA com todas as métricas pra reduzir em dois eixos - Testamos diferenças entre tipos fenológicos e tipos de vegetação.
+.center[&lt;img width="30%" src="https://miro.medium.com/v2/resize:fit:569/1*SvIa7jrT28m-tqSd6AzTVQ.png"&gt;]
+
+---
+# Capítulo II - Métodos
+## Seleção das métricas que melhor separam os tipos fenológicos baseados na florística
+
+### Modelo de classificação Random Forest
+- Separamos em treino (70%) e teste (30%)
+
+.center[&lt;img width="50%" src="https://victorzhou.com/media/random-forest-post/random-forest.png"&gt; ]
+
+### Importância de cada métrica usando o Índice de Gini
+---
+# Capítulo II - Métodos
+
+## Usamos as melhores métricas para testar se elas separam o tipo fenológico baseado na florística.
+
+### Agrupamento usando o algorítmo C-means (2 grupos)
+- Pontos podem pertencer a mais de um cluster;
+- É atribuido um valor de grau de pertencimento ao grupo: **Pertinência**
+- Excluimos pontos com menos de 70% de pertinência: &lt;b&gt;sobraram 991 pontos&lt;/b&gt;.
+
+.center[&lt;img width="55%" src="https://i0.wp.com/www.blopig.com/blog/wp-content/uploads/2023/04/Centroid_clustering-copy.png?resize=768%2C512&amp;ssl=1"&gt;]
+
+---
+# Capítulo II - Métodos
+## Testar se clima influencia a resposta da vegetação à sazonalidade da chuva
+
+### Caracterizar regime climático:
+#### Calculamos MAP e MSI com base no CHIRPS 
+#### Temperatura do ERA5-Land
+#### VPD [(Grossiord et al., 2020)]()
+
+.center[&lt;img width="25%" src="https://static.escolakids.uol.com.br/conteudo_legenda/4e3d738c244f4c5f3b56f46260402cc4.jpg"&gt;]
+
+---
+# Capítulo II - Métodos
+## Resposta da vegetação à variação sazonal da chuva
+
+### Calculamos o acoplamento [(Cure et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#s0075) para cada ponto.
+ #### - Resposta da vegetação: Maior acoplamento (0 a 4 meses)
+ #### - Testamos diferenças entre grupos, tipos de vegetação, tipos fenológicos e biomas
+ 
+.center[ &lt;img width="75%" src="https://www.mdpi.com/sustainability/sustainability-15-03052/article_deploy/html/images/sustainability-15-03052-g001.png"&gt;]
+---
+# Capítulo II - Métodos
+##  Estamos interessados em como diferentes variáveis ambientais em grande escala (MAP, MAT, MSI, VPD) afetam o acoplamento.
+ 
+  ###  Ajustamos dois modelos lineares de mínimos quadrados para cada variável ambiental:
+- Um modelo para pontos com acoplamento negativo (NEG).
+- Outro modelo para pontos com acoplamento positivo (POS).
+
+### Seleção dos modelos:
+- Critério de Informação de Akaike (AIC)
+
+
+
+---
+# Capítulo II - Métodos
+##  Análise das respostas ao longo do gradiente de precipitação
+
+### - Dividimos o gradiente de MAP em cinco intervalos
+&lt;/br&gt;
+### - Calculamos a variância do acoplamento para cada intervalo
+
+.center[&lt;img width="37%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfJgKmzMIEMZ581Xbs0ZzdWlJbVz-gWVGKg&amp;s"&gt;
+] 
+---
+# Capítulo II - Resultados
+### Resumo das métricas do EVI2
+.center[&lt;img width="90%" src="Fig_1.png"&gt;]
+ 
+---
+# Capítulo II - Resultados
+### Variáveis mais importantes para separar os tipos fenológicos baseados em florística
+.center[&lt;img width="80%" src="SM1.png"&gt;]
+
+---
+# Capítulo II - Resultados
+### Agrupamento pelo c-means
+.center[&lt;img width="72%" src="Fig_2.png"&gt;]
+ 
+---
+# Capítulo II - Resultados
+### Ciclo anual do EVI2 por grupo
+.center[&lt;img width="90%" src="Fig_4_2.png"&gt;]
+
+---
+# Capítulo II - Resultados
+### Relação com o clima
+.center[&lt;img width="80%" src="New_Fig_7.png"&gt;]
+
+---
+# Capítulo II - Resultados
+### Biomas apresentam condições ambientais particulares
+.center[&lt;img width="90%" src="Fig_9.png"&gt;]
+
+
+---
+# Capítulo II - Discussão
+
+## Diversidade de respostas
+
+### Variabilidade intraespecífica
+.center[&lt;img width="50%" src="dis_capII.png"&gt;&lt;img width="50%" src="dis_capII_2.png"&gt;]
+
+--
+
+### Disponibilidade de água e nutrientes no solo
+.center[&lt;img width="45%" src="dis_capII_3.png"&gt;&lt;img width="40%" src="dis_capII_4.png"&gt;]
+
+---
+# Capítulo II - Conclusão
+## Hipótese 1: Tipos fenológicos refletem o sinal espectral da vegetação
+
+--
+
+
+#### - As classes de brotamento foliar baseadas na florística representam mal as dinâmicas de verdor detectadas por sensoriamento remoto;
+
+--
+
+
+#### - Comunidades decíduas e sempre-verdes diferem nas respostas, e semidecíduas mostram ambos os comportamentos;
+
+.center[&lt;img width="45%" src="parte1.png"&gt;]
+
+---
+# Capítulo II - Conclusão
+## Hipótese 2: A resposta da vegetação depende do regime climático.
+
+
+### - O acoplamento depende dos regime climático onde a comunidade está inserida.
+
+
+---
+# Considerações Finais
+***
+#### - Diferentes tipos de vegetação possuem respostas diferentes;
+
+--
+
+#### - Variáveis funcionais são mais efetivas do que variáveis estruturais
+
+--
+
+#### - Aplicação de métricas de escala local para escalas maiores revela a heterogeneidade escondida em dados com baixa resolução;
+
+--
+
+#### - Na escala de paisagem não são estados alternativos;
+
+.center[&lt;img width="90%" src="chave alternative stable states.png"&gt;]
+---
+# Agradecimentos
+***
+
+
+.center[&lt;img width="18%" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K4773561T3"/&gt;
+&lt;img width="18%" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K4238721H2"/&gt;
+&lt;img width="25%" src="https://ipes.ufsc.br/wp-content/themes/ipes-v1/images/logotipo.png"/&gt;
+&lt;img width="18%" src="https://d15mvavv27jnvy.cloudfront.net//66e54aca29b651c12caa01d637d0db0d.jpg"/&gt;
+
+&lt;img width="18%" src="https://fapesc.sc.gov.br/wp-content/uploads/2024/05/Preview-Site-VERSAO-2-VERTICAL-COR-branco.jpg"/&gt;
+&lt;img width="18%" src="https://campusvirtual.fiocruz.br/portal/sites/default/files/serrapilheira_chamada_capa.jpg"/&gt;
+&lt;img width="16%" src="https://www.funbio.org.br/wp-content/themes/funbio/images/funbio-logo-min.png"/&gt;
+&lt;img width="20%" src="https://labedu.org.br/wp-content/uploads/2018/06/Azul-Background-Branco.jpg"/&gt;
+]
+
+****
+
+# Aos familiares e aos amigos que ajudaram em campo e em discussões ou que de alguma forma contribuiram com essa empreitada. =)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

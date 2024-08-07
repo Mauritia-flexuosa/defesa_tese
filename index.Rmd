@@ -1,0 +1,822 @@
+---
+title: "Estados funcionais da vegetação neotropical e a heterogeneidade das respostas fenológicas à sazonalidade da chuva"
+subtitle: "Marcio Baldissera Cure"
+author: "Orientadora: Profª Drª Marina Hirota - Coorientador: Dr Bernardo Monteiro Flores"
+institute: "PPG Ecologia, UFSC"
+date: "08-08-2024`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css: ["uo", "rutgers-fonts", "marcio.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: top, left
+
+```{r xaringan-logo, echo=FALSE, include=TRUE}
+xaringanExtra::use_logo(image_url = "https://ipes.ufsc.br/wp-content/themes/ipes-v1/images/logotipo.png")
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r webcam, echo=FALSE, include= TRUE}
+xaringanExtra::use_webcam()
+```
+
+```{r xaringan_themes, echo = FALSE, include=FALSE}
+	names(xaringan:::list_css())
+```
+
+```{r broadcast, echo=FALSE}
+xaringanExtra::use_broadcast()
+```
+
+# Sumário
+
+</br>
+### 1. INTRODUÇÃO
+- Contextualização
+
+</br>
+--
+
+### 2. CAPÍTULO I:  Vegetation-rainfall coupling as an indicator of ecosystem state in a heterogeneous landscape [(Cure et al. ,2023)](https://doi.org/10.1016/j.ecolind.2023.111268).
+
+
+</br>
+--
+
+### 3. CAPÍTULO II: Unravelling distinct leaf phenologies in tropical vegetation types
+
+</br>
+--
+
+###4. CONSIDERAÇÕES FINAIS
+
+.center[<img width="33%" src=""/>
+]
+
+---
+# Introdução 
+## Ecossistemas são sistemas complexos
+
+- Elementos bióticos e abióticos interagindo;
+- Propriedades emergentes;
+
+
+.center[
+<img width="100%" src="Fig1.png"/>
+*Exemplos de ecossistemas*
+  ]
+---
+# Introdução
+##Variável de estado
+</br>
+### Por exemplo: Cobertura do dossel como uma variável que dá identidade ao sistema.
+
+.center[
+<img width="45%" src="https://cdn.britannica.com/52/104452-004-A5AB4938/Serengeti-Plain-Africa-feature-savanna-biome-example.jpg?w=400&h=300&c=crop"/><img width="50%" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Aerial_view_of_the_Amazon_Rainforest.jpg"/>
+
+Exemplo: Savanas e florestas.]
+
+---
+# Intrudução
+##Sistemas são dinâmicos 
+
+- Mudanças graduais;
+- Mudanças não-lineares;
+- Mudanças abruptas com histerese: apresenta estados alternativos 
+</br>
+
+.center[
+<img width="107%" src="Fig6.png"/>
+]
+<br>
+<br>
+[Scheffer e Carpenter, 2003](https://doi.org/10.1016/j.tree.2003.09.002)
+---
+# Introdução
+##Mecanismos de auto-organização
+
+- Balanço entre os __feedbacks__ <font color = "blue">positivos</font> e <font color = "red">negativos</font>;
+- Mantém/alteram identidade e propriedades emergentes.
+
+--
+
+.center[
+<img width="40%" src="https://media.cheggcdn.com/media%2F1bb%2F1bb4e194-edf8-4354-b08c-82ee5ae048e7%2Fphppfou47.png"/><img width="60%" src="Fig7.png"/>
+]
+[Flores & Staal (2022)](); [Hoffmann & Jackson (2000)](); [Pausas & bond (2021)]()
+
+---
+# Resiliência
+
+- Maneira de olhar para a dinâmica dos sistemas;
+- Parte do pressuposto da existência de estados alternativos de funcionamento;
+
+- **Definição:** Capacidade dos sistemas de absorver impactos antes de mudar para um estado alternativo ([Holling, 1973]());
+
+
+
+.center[
+<img width="70%" src="Fig8.png"/>
+]
+
+Ex.: Florestas e savannas são estados alternativos definidos parcialmente pelo regime de chuvas [Hirota et al., 2011]().
+
+---
+# Mecanismos de regulação hídrica
+</br>
+### - Evitar falha hidráulica;
+### - Diferentes estratégias
+### - Determinado pela disponibilidade de recursos.
+
+.center[
+<img width="50%" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41477-019-0390-3/MediaObjects/41477_2019_390_Figa_HTML.jpg?as=webp"><img width="50%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dry_Forest_Theppakadu_Mudumalai_Mar21_A7C_00505.jpg/800px-Dry_Forest_Theppakadu_Mudumalai_Mar21_A7C_00505.jpg?20210331140115">
+  ]
+
+[Oliveira et al., 2021](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17266)
+</br>[Brodribb & Holbrook (2003)](https://nph.onlinelibrary.wiley.com/doi/full/10.1046/j.1469-8137.2003.00736.x)</br>[Slelton et al., 2015]()
+---
+# Fenologia foliar
+</br>
+## Proxy para o funcionamento da vegetação
+### - Ciclos biológicos impulsionados por variações sazonais no ambiente
+
+### - Indicador da variação anual da produtividade primária
+
+### - Decíduas e sempre verdes
+
+.center[
+<img width="70%" src="https://images.squarespace-cdn.com/content/v1/58a1ff6117bffc275689252e/1576887075653-18D8IPKYNF6S9H2N9NXE/Phenology+Tree+Image.jpg?format=1500w">
+]
+---
+# Lacuna do conhecimento
+***
+</br>
+### Nenhum estudo até o momento caracterizou de forma abrangente os estados funcionais da vegetação em escala local e continental.
+
+
+---
+# Objetivo geral
+***
+</br>
+###Entender a resiliência da vegetação tropical brasileira em um contexto de mudanças, com base na caracterização dos estados funcionais da vegetação e sua resposta fenológica à variação sazonal da chuva, considerando fatores ambientais em escala local e continental.
+
+.center[
+<img width="60%" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10021-021-00654-4/MediaObjects/10021_2021_654_Figa_HTML.jpg?as=webp">
+
+Foto de Rafael Oliveira]
+
+---
+
+# Objetivos específicos
+***
+</br>
+### **Capítulo I**: Diferenciar funcionalmente os tipos de vegetação coexistentes em uma mesma paisagem do Cerrado; e
+
+</br>
+--
+
+### **Capítulo II**: Testar se na escala continental a resposta de florestas e savanas, entre tipos decíduos, sempre verdes e de semidecíduos em relação à variação sazonal da chuva são influenciados pelo regime climático de larga escala.
+---
+
+# Capítulo I: 
+***
+</br>
+### **Capítulo I**: Trata dos estados funcionais da vegetação na escala de paisagem.
+
+
+.center[
+<img width="80%" src="capI.png">
+]
+
+---
+.center[<img width="90%" src="pncv.jpeg">
+
+*Vereda no Jardim de Maythrea - PNCV*]
+
+
+---
+# Capítulo I - Introdução
+## Savanas e Florestas na região tropical
+
+- São estados alternativos em termos de estrutura da vegetação (cobertura do dossel) determinados parcialmente pela PMA. 
+
+```{r figure1, include=TRUE, echo=FALSE, out.width="100%", fig.align='center', fig.pos='bottom', fig.cap="Hirota et al (2011) Science"}
+knitr::include_graphics("hirota.jpg")
+```
+---
+class: top, left
+# Capítulo I - Introdução
+## Sob o mesmo regime de precipitação...
+
+- __Savannas__ e __florestas__ dividem a mesma paisagem e sua distribuição é determinada pelo regime de fogo, disponibilidade de água e características do solo.  
+
+
+...que são determinados pelos Feedbacks entre a vegetação e o meio abiótico. (Frequentemente baseado na estrutura da vegetação)
+
+.center[ <img width="48%" src="Fig3.png">
+
+*Staal & Flores (2015)*]
+
+*Ferreira et al (2007); Dantas et al (2016); Veenendaal et al (2018); Pausas et al (2020); Bernardino et al (2021)*
+
+---
+# Capítulo I - Introdução
+
+## Há diferentes tipos funcionais de Florestas
+
+- Por exemplo, **matas secas** e **matas de galeria**.
+
+.center[
+<img width="62%" src="https://images-provider.frontiersin.org/api/ipx/w=290&f=webp/https://www.frontiersin.org/files/Articles/391790/fevo-06-00104-HTML-r1/image_m/fevo-06-00104-g001.jpg">
+
+*Dexter et al., 2018*
+  ]
+  
+---
+# Capítulo I - Introdução
+## Relação entre estrutura e funcionamento
+
+
+<h4>
+ Estudos sugerem que o funcionamento da vegetação seja correspondente à estrutura. (Dantas et al 2015; Xu et al 2016; Bernardino et al 2021)
+</h4>
+
+####  (Área basal, BT, Altura da árvores, como proxy da funcionalidade).
+
+
+.center[
+<img width="45%" src="xu20161.png"/>
+]
+
+---
+class: top, left
+# Capítulo I - Introdução
+## Produtividade primária como um proxy do funcionamento da vegetação
+
+
+#### Produção primária bruta é uma função básica para os ecossistemas e pode ser inferida por índices derivados de imagens de satélite *Biudes et al (2021)*.
+
+.center[
+<img width="70%" src="biudes2021.png">
+]
+
+---
+# Capítulo I
+## Pergunta:
+
+### Matas secas, matas de galeria e savanas podem ser diferenciados funcionalmente com base na resposta espectral da vegetação à variação sazonal na chuva?
+
+## Hipótese:
+### Esperamos que o acoplamento entre o verdor foliar e a chuva possam diferenciar os tipos de vegetação e refletem diferentes estratégias dependentes das condições ambientais locais.
+
+---
+# Capítulo I - Métodos
+### Área de estudo
+- Parque Nacional da Chapada dos Veadeiros
+- 30 parcelas de 200m²
+- <font color="purple">Mata seca</font>, <font color="blue">Mata de Galeria</font> e <font color="orange">Cerrado <i>stricto sensu</i></font>
+
+.center[<img width = "100%" src="Figure_1_1.png">]
+---
+# Capítulo I - Métodos
+</br>
+### Usamos dados de campo e de satélite para caracterizar as condições ambientais e os estados da vegetação.
+</br>
+.center[<img width = "50%" src="campo.jpeg"><img width = "50%" src="gee.png">]
+
+---
+# Capítulo I - Métodos
+</br>
+### Caracterização das condições ambientais: **fis/quim do solo**
+
+- Coleta de solo
+- Análise: Laboratório de solos da UFV
+- PCA
+
+
+.center[<img width="32%" src="WhatsApp Image 2021-07-15 at 17.06.39.jpeg"/>]
+---
+# Capítulo I - Métodos
+</br>
+
+### Caracterização das condições ambientais: **água no solo**
+
+#### Topographic wetness index (TWI) [Beven & Kirkby (1979)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#b0055)
+
+.center[
+$TWI=ln(A_s/tan\beta)$
+]
+
+.center[<img src="https://lh6.googleusercontent.com/proxy/220RSwMDKxuEkTPXfr53awUnrIJQUP2730u4iv4zd59t-s-YA25IkoKBSp0YlS4_375RCSZoroZVgLTrtEI-H6rFaGUbfXw0stI3Hw">]
+---
+# Capítulo I - Métodos
+</br>
+### Caracterização do regime de chuva: **Série temporal de precipitação**
+
+
+#### Precipitação mensal do CHIRPS (resolução de ~ 5 Km)
+
+- MAP e MSI ([Markham, 1970]())
+</br>
+.center[<img width="70%" src="chirps.png">] 
+---
+# Capítulo I - Métodos
+</br>
+### Variável de estado estrutural: **Cobertura do dossel**
+
+- Cobertura do dossel usando o densiômetro florestal côncavo;
+- Coleta nas estações seca e chuvosa;
+- $Deciduidade = TreeCover_c - TreeCover_s$
+
+.center[<img width="60%" src="dens.jpeg">]
+---
+# Capítulo I - Métodos
+</br>
+### Variáveis de estado estruturais/funcionais: **Atributos da vegetação**
+#### Obs.: Estas variáveis já foram usadas como proxy de funcionalidade
+- Altura das árvores (Xu et al., 2016);
+- Área basal (Dantas et al., 2015);
+- Espessura de casca (Bernardono et al, 2021).
+
+
+
+.center[ <img width="32%" src="WhatsApp Image 2021-07-15 at 17.11.41.jpeg"/>
+<img width="32%" src="IMG_20190420_110336.jpg"/>
+
+]
+---
+# Capítulo I - Métodos
+</br>
+### Variáveis de estado funcionais: **Dados de satélite**
+
+- Landsat 8 (30m x 30m; a cada 16 dias; 2013-2018)
+- $EVI2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)$
+- Média, desvio padrão
+
+.center[<img width="70%" src="https://adenilsongiovanini.com.br/blog/wp-content/uploads/2019/12/landsat-8-780x382.jpg">]
+---
+# Capítulo I - Métodos
+</br>
+### Variável de estado proposta neste trabalho: **Acoplamento**
+
+#### - Correlação de Kendal entre séries de EVI2;
+#### - Acoplamento = Maior resposta considerando atrasos em meses (0 a 6);
+#### - Lag: atraso para a maior resposta em meses.
+
+```{r figure2, include=TRUE, echo=FALSE, out.width=800,out.height=300,fig.dim=50, fig.align='center', fig.cap="Exemplo acoplamento"}
+library(tidyverse)
+
+data <- read_rds("/home/mcure/Documents/IFFSC/dados_completos.rds")
+teste <- data |>
+  filter(coupling < 0) |> select(tabela) |>  pluck(1) |>
+  pluck(1) |>
+  select(time, rainfall, temperature, monthly_evi2)
+
+library(plotly)
+
+#plot_2 <-
+plotly::plot_ly(teste) %>%
+  plotly::add_lines(x=~time,y=~monthly_evi2,name = 'Mean monthly EVI2',connectgaps = F, color = I("green4")) %>%
+  plotly::add_lines(x=~time,y=~rainfall,name = 'Mean monthly rainfall',type = 'scatter',mode = 'lines+markers',connectgaps = FALSE,yaxis = "y2", color = I("blue")) %>%
+  plotly::layout(title = 'A',
+         xaxis = list(title = "Month"),
+         yaxis2 = list(side = 'right', overlaying = "y", title = 'Mean monthly precipitation (mm)', showgrid = FALSE, zeroline = FALSE))
+
+```
+
+---
+# Capítulo I - Métodos
+### Testamos as diferenças entre os tipos de vegetação - **Teste de Mann-Whitney**
+
+#### - Variáveis de estado estruturais e funcionais;
+#### - Condições ambientais
+
+.center[<img width="35%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Yi-qvTjseH5rPNfGTz1ple1EywaU7W0yJg&s">]
+---
+# Capítulo I - Resultados e Discussão
+
+### Regime de chuva - Parcelas estão no mesmo regime de chuva.
+.center[<img width="60%" src="chuva.png">
+Staver et al. (2011)
+]
+---
+# Capítulo I - Resultados e Discussão
+### Condições ambientais locais - PCA das variáveis do solo.
+
+.center[ <img width="95%" src="pca_1.png">
+]
+
+---
+# Capítulo I - Resultados e Discussão
+### Condições ambientais locais - Tipos de vegetação diferem.
+.center[ <img width="65%" src="https://ars.els-cdn.com/content/image/1-s2.0-S1470160X23014103-gr2.jpg">
+
+Ratter & Dargie, 1992; Oliveira & Marquis, 2002; Ribeiro & Walter, 2008; Cowling & Potts, 2015; Lira-Martins et al., 2022]
+
+
+
+
+---
+# Capítulo I - Resultados e Discussão
+</br>
+### Variáveis de estado estruturais.
+
+.center[<img width="85%" src="estruturais2.png">]
+
+Xu et al., (2015); Dantas et al., (2016); Bernardino et al., (2022)
+---
+# Capítulo I - Resultados e Discussão
+### Variáveis de estado funcionais 
+</br>
+<b><font color="purple">Mata seca</font>;
+<font color="blue">Mata de Galeria</font>;
+<font color="orange">Savana</font></b>
+
+</br>
+.center[ <img width="107%" src="Fig_3_1.png">
+]
+
+### Tipos de vegetação diferem funcionalmente.
+
+---
+# Capítulo I - Resultados e Discussão
+
+### Mata de galeria aumenta o greenness na estação seca;
+- Acesso perene à água (Veneklaas et al., 2005; Bueno et al., 2018);
+- Não é limitada por água e sim por luz (Green et al., 2020, Smith et al., 2020)
+.center[
+<img width="50%" src="amazon_green.png"/>    
+]
+---
+# Capítulo I - Resultados e Discussão
+
+### Matas secas perdem as folhas na estação seca
+</br></br>
+.center[<img width="100%" src="fig_rafa.png"/>]
+
+Oliveira et al., (2021)
+---
+# Capítulo I - Resultados e Discussão
+### Árvores de savana não são sensíveis à diminuição da precipitação durante a estação seca;
+
+- Diversidade de estratégias de tolerância à seca;
+- Acesso à água (raizes);
+- Facilitação;
+- Controle da perda d'água
+
+.center[<img width="50%" src="strategy1.png"/>
+<img width="49%" src="strategy2.png"/>
+<img width="48%" src="guiga.png"/>
+<img width="48%" src="bucci2008.png"/>
+]
+---
+# Capítulo I - Resultados e Discussão
+### Variáveis de estado - Relação com a cobertura do dossel.
+.center[ <img width="72%" src="Figure_4.png">
+]
+
+---
+# Capítulo I - Conclusão
+## Hipótese: Tipos de vegetação coexistentes podem ser diferenciados pela resposta do verdor foliar à variação sazonal na precipitação.
+#### - Tipos de vegetação distintos coexistem em paisagens tropicais.
+
+--
+
+#### - Tipos de vegetação coexistentes respondem de maneira diferente à variação sazonal das chuvas.
+
+--
+
+#### - Ecossistemas estruturalmente similares (florestas secas e de galeria) são - funcionalmente distintos.
+
+--
+
+#### - As respostas são parcialmente determinadas pela disponibilidade de nutrientes e água no solo.
+
+--
+
+#### - A relação entre a precipitação e o verdor foliar é um bom indicador dos estados funcionais da vegetação.
+
+
+
+---
+# Capítulo II: 
+***
+</br>
+### **Capítulo II**: Testa se a resposta da vegetação na escala continental é influenciada pelo regime climático.
+
+## Unravelling distinct leaf phenologies in tropical vegetation types
+#### Marcio Baldissera Cure; Bernardo Monteiro Flores; Marina Hirota
+
+
+
+---
+# Capítulo II - Introdução
+</br>
+
+### Partindo do <u>Capítulo I</u> (Escala de paisagem):
+#### - Tipos de vegetação com funcionamento diferente coexistem;
+#### - Diferentes respostas denotam estratégias diferente para lidar com períodos de seca;
+#### - Acoplamento verdor foliar-chuva pode diferenciar os tipos de vegetação coexistentes, enquanto que as variáveis estruturais não conseguem.
+---
+# Capítulo II - Introdução
+</br>
+###  A heterogeneidade da vegetação desafia o entendimento das respostas dos ecossistemas às variações ambientais.
+
+#### - Respostas são refletidas na fenologia foliar
+
+#### - Incerteza nas respostas da vegetação
+#### - Dificuldade de representar variação sazonal dos fluxos de água e carbono
+.center[<img width="70%" src="restrepo.png">]
+---
+# Capítulo II - Introdução
+</br>
+
+### Modelos se baseiam em características das plantas relativas à fenologia (e.g., PFTs);
+#### - Não levam em conta variabilidade intraespecífica (Albert et al., 2012)
+#### - Não levam em conta variabilidade ambiental
+
+.center[<img width="79%" src="albert.png">]
+
+
+---
+# Capítulo II - Introdução
+## Pergunta 1:
+
+### A classificação da deciduidade da vegetação com base na florística  reflete a resposta espectral da vegetação às variações na chuva?
+
+## Hipótese 1:
+
+### Esperamos que exista uma heterogeneidade nas respostas devido à variabilidade intraespecífica e ambiental.
+
+.center[<b><font color="green">Sempre verdes</font></b> - Acoplamento negativo
+
+<font color="purple"><b>Decíduas</b></font> - Acoplamento positivo
+
+<font color="orange"><b>Semidecíduas</b></font> - Respostas heterogêneas
+]
+
+---
+# Capítulo II - Introdução
+## Pergunta 2:
+### Existe relação entre a resposta espectral da vegetação com o regime climático?
+
+## Hipótese 2:
+### Esperamos que o acoplamento entre o verdor foliar e a chuva seja dependente do regime climático.
+
+<b><font = color="green">Acoplamento negativo</font></b>: Alta MAP; Baixa sazonalidade; Baixo VPD
+
+<b><font color="purple">Acoplamento positivo</font></b>: Baixa MAP; Alta sazonalidade; Alto VPD
+
+<b><font color="orange">Respostas heterogêneas</font></b>: MAP, sazonalidade e VPD <i>intermediários</i>
+
+---
+# Capítulo II - Métodos
+
+## Pontos de amostragem
+#### - Dados usados em [Dexter et al. (2018)](https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2018.00104/full)
+#### - 3990 pontos do [NeoTropTree database](http://www.neotroptree.info/)
+
+.center[<img width="86%" src="neotrop.png">]
+
+---
+# Capítulo II - Métodos
+## Caracterização da vegetação: com base na composição de espécies
+
+- <b><font size="5" color="brown">Decídua</font></b>
+- <b><font size="5" color="orange">Semidecídua</font></b>
+- <b><font size="5" color="green">Sempre verde</font></b>
+
+.center[<img width="45%" src="https://images-provider.frontiersin.org/api/ipx/w=290&f=webp/https://www.frontiersin.org/files/Articles/391790/fevo-06-00104-HTML-r1/image_m/fevo-06-00104-g001.jpg">]
+--
+ <b>Testar se essa classificação fenológica reflete a resposta espectral da vegetação.</b>
+
+---
+# Capítulo II - Métodos
+
+## Dados espectrais
+#### - Sentinel 2 (10m x 10m; a cada 5 dias);
+#### - Calculamos o EVI2:
+$EVI_2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)$
+
+.center[<img width="50%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sentinel_2-IMG_5873-white_%28crop%29.jpg/275px-Sentinel_2-IMG_5873-white_%28crop%29.jpg"> 
+
+[Sentinel-2](https://en.wikipedia.org/wiki/Sentinel-2)]
+
+---
+# Capítulo II - Métodos
+
+## Seleção dos pontos de amostragem
+
+
+#### - Pontos com menos de 35% de valores faltantes ([Feng et al., 2021]());
+--
+
+#### - Completamos as séries com NAs usando interpolação linear;
+--
+
+
+#### - Selecionamos <font color="green">Florestas</font> e <font color="orange">Savanas</font> usando o [MapBiomas](http://mapbiomas.org) (n = 1037) 
+
+.center[<img width="45%" src="mapa_methods.png">]
+---
+# Capítulo II - Métodos
+## Caracterização da vegetação: Dados espectrais
+
+### - Calculamos o <u>EVI2 médio para cada mês</u> de 2019 até 2022; 
+
+--
+
+### ...e a partir daí, calculamos várias métricas:
+
+.left-side[
+<list>
+1. Média;
+2. Desvio padrão;
+3. Amplitude;
+4. Entropia;
+5. Mínimos;
+6. Máximos;
+7. Anomalia; e
+8. Ciclo anual (Média para cada mês).</list>
+]
+##### PCA com todas as métricas pra reduzir em dois eixos - Testamos diferenças entre tipos fenológicos e tipos de vegetação.
+.center[<img width="30%" src="https://miro.medium.com/v2/resize:fit:569/1*SvIa7jrT28m-tqSd6AzTVQ.png">]
+
+---
+# Capítulo II - Métodos
+## Seleção das métricas que melhor separam os tipos fenológicos baseados na florística
+
+### Modelo de classificação Random Forest
+- Separamos em treino (70%) e teste (30%)
+
+.center[<img width="50%" src="https://victorzhou.com/media/random-forest-post/random-forest.png"> ]
+
+### Importância de cada métrica usando o Índice de Gini
+---
+# Capítulo II - Métodos
+
+## Usamos as melhores métricas para testar se elas separam o tipo fenológico baseado na florística.
+
+### Agrupamento usando o algorítmo C-means (2 grupos)
+- Pontos podem pertencer a mais de um cluster;
+- É atribuido um valor de grau de pertencimento ao grupo: **Pertinência**
+- Excluimos pontos com menos de 70% de pertinência: <b>sobraram 991 pontos</b>.
+
+.center[<img width="55%" src="https://i0.wp.com/www.blopig.com/blog/wp-content/uploads/2023/04/Centroid_clustering-copy.png?resize=768%2C512&ssl=1">]
+
+---
+# Capítulo II - Métodos
+## Testar se clima influencia a resposta da vegetação à sazonalidade da chuva
+
+### Caracterizar regime climático:
+#### Calculamos MAP e MSI com base no CHIRPS 
+#### Temperatura do ERA5-Land
+#### VPD [(Grossiord et al., 2020)]()
+
+.center[<img width="25%" src="https://static.escolakids.uol.com.br/conteudo_legenda/4e3d738c244f4c5f3b56f46260402cc4.jpg">]
+
+---
+# Capítulo II - Métodos
+## Resposta da vegetação à variação sazonal da chuva
+
+### Calculamos o acoplamento [(Cure et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1470160X23014103#s0075) para cada ponto.
+ #### - Resposta da vegetação: Maior acoplamento (0 a 4 meses)
+ #### - Testamos diferenças entre grupos, tipos de vegetação, tipos fenológicos e biomas
+ 
+.center[ <img width="75%" src="https://www.mdpi.com/sustainability/sustainability-15-03052/article_deploy/html/images/sustainability-15-03052-g001.png">]
+---
+# Capítulo II - Métodos
+##  Estamos interessados em como diferentes variáveis ambientais em grande escala (MAP, MAT, MSI, VPD) afetam o acoplamento.
+ 
+  ###  Ajustamos dois modelos lineares de mínimos quadrados para cada variável ambiental:
+- Um modelo para pontos com acoplamento negativo (NEG).
+- Outro modelo para pontos com acoplamento positivo (POS).
+
+### Seleção dos modelos:
+- Critério de Informação de Akaike (AIC)
+
+
+
+---
+# Capítulo II - Métodos
+##  Análise das respostas ao longo do gradiente de precipitação
+
+### - Dividimos o gradiente de MAP em cinco intervalos
+</br>
+### - Calculamos a variância do acoplamento para cada intervalo
+
+.center[<img width="37%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfJgKmzMIEMZ581Xbs0ZzdWlJbVz-gWVGKg&s">
+] 
+---
+# Capítulo II - Resultados
+### Resumo das métricas do EVI2
+.center[<img width="90%" src="Fig_1.png">]
+ 
+---
+# Capítulo II - Resultados
+### Variáveis mais importantes para separar os tipos fenológicos baseados em florística
+.center[<img width="80%" src="SM1.png">]
+
+---
+# Capítulo II - Resultados
+### Agrupamento pelo c-means
+.center[<img width="72%" src="Fig_2.png">]
+ 
+---
+# Capítulo II - Resultados
+### Ciclo anual do EVI2 por grupo
+.center[<img width="90%" src="Fig_4_2.png">]
+
+---
+# Capítulo II - Resultados
+### Relação com o clima
+.center[<img width="80%" src="New_Fig_7.png">]
+
+---
+# Capítulo II - Resultados
+### Biomas apresentam condições ambientais particulares
+.center[<img width="90%" src="Fig_9.png">]
+
+
+---
+# Capítulo II - Discussão
+
+## Diversidade de respostas
+
+### Variabilidade intraespecífica
+.center[<img width="50%" src="dis_capII.png"><img width="50%" src="dis_capII_2.png">]
+
+--
+
+### Disponibilidade de água e nutrientes no solo
+.center[<img width="45%" src="dis_capII_3.png"><img width="40%" src="dis_capII_4.png">]
+
+---
+# Capítulo II - Conclusão
+## Hipótese 1: Tipos fenológicos refletem o sinal espectral da vegetação
+
+--
+
+
+#### - As classes de brotamento foliar baseadas na florística representam mal as dinâmicas de verdor detectadas por sensoriamento remoto;
+
+--
+
+
+#### - Comunidades decíduas e sempre-verdes diferem nas respostas, e semidecíduas mostram ambos os comportamentos;
+
+.center[<img width="45%" src="parte1.png">]
+
+---
+# Capítulo II - Conclusão
+## Hipótese 2: A resposta da vegetação depende do regime climático.
+
+
+### - O acoplamento depende dos regime climático onde a comunidade está inserida.
+
+
+---
+# Considerações Finais
+***
+#### - Diferentes tipos de vegetação possuem respostas diferentes;
+
+--
+
+#### - Variáveis funcionais são mais efetivas do que variáveis estruturais
+
+--
+
+#### - Aplicação de métricas de escala local para escalas maiores revela a heterogeneidade escondida em dados com baixa resolução;
+
+--
+
+#### - Na escala de paisagem não são estados alternativos;
+
+.center[<img width="90%" src="chave alternative stable states.png">]
+---
+# Agradecimentos
+***
+
+
+.center[<img width="18%" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4773561T3"/>
+<img width="18%" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4238721H2"/>
+<img width="25%" src="https://ipes.ufsc.br/wp-content/themes/ipes-v1/images/logotipo.png"/>
+<img width="18%" src="https://d15mvavv27jnvy.cloudfront.net//66e54aca29b651c12caa01d637d0db0d.jpg"/>
+
+<img width="18%" src="https://fapesc.sc.gov.br/wp-content/uploads/2024/05/Preview-Site-VERSAO-2-VERTICAL-COR-branco.jpg"/>
+<img width="18%" src="https://campusvirtual.fiocruz.br/portal/sites/default/files/serrapilheira_chamada_capa.jpg"/>
+<img width="16%" src="https://www.funbio.org.br/wp-content/themes/funbio/images/funbio-logo-min.png"/>
+<img width="20%" src="https://labedu.org.br/wp-content/uploads/2018/06/Azul-Background-Branco.jpg"/>
+]
+
+****
+
+# Aos familiares e aos amigos que ajudaram em campo e em discussões ou que de alguma forma contribuiram com essa empreitada. =)
