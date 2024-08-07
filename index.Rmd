@@ -3,7 +3,7 @@ title: "Estados funcionais da vegetação neotropical e a heterogeneidade das re
 subtitle: "Marcio Baldissera Cure"
 author: "Orientadora: Profª Drª Marina Hirota - Coorientador: Dr Bernardo Monteiro Flores"
 institute: "PPG Ecologia, UFSC"
-date: "08-08-2024"
+date: "08-08-2024`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
