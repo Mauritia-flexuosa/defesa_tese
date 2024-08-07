@@ -3,7 +3,7 @@ title: "Estados funcionais da vegetação neotropical e a heterogeneidade das re
 subtitle: "Marcio Baldissera Cure"
 author: "Orientadora: Profª Drª Marina Hirota - Coorientador: Dr Bernardo Monteiro Flores"
 institute: "PPG Ecologia, UFSC"
-date: "08-08-2024`"
+date: "08-08-2024"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -161,6 +161,7 @@ Ex.: Florestas e savannas são estados alternativos definidos parcialmente pelo 
 </br>
 ### Nenhum estudo até o momento caracterizou de forma abrangente os estados funcionais da vegetação em escala local e continental.
 
+.center[<img width="30%" src="https://st.depositphotos.com/2010047/3453/i/450/depositphotos_34532105-stock-photo-3d-small-people-question-mark.jpg">]
 
 ---
 # Objetivo geral
@@ -275,7 +276,7 @@ class: top, left
 ### Matas secas, matas de galeria e savanas podem ser diferenciados funcionalmente com base na resposta espectral da vegetação à variação sazonal na chuva?
 
 ## Hipótese:
-### Esperamos que o acoplamento entre o verdor foliar e a chuva possam diferenciar os tipos de vegetação e refletem diferentes estratégias dependentes das condições ambientais locais.
+### Esperamos que o acoplamento entre o verdor foliar e a chuva possa diferenciar os tipos de vegetação e reflete diferentes estratégias dependentes das condições ambientais locais.
 
 ---
 # Capítulo I - Métodos
@@ -397,7 +398,7 @@ plotly::plot_ly(teste) %>%
 ### Testamos as diferenças entre os tipos de vegetação - **Teste de Mann-Whitney**
 
 #### - Variáveis de estado estruturais e funcionais;
-#### - Condições ambientais
+#### - Condições ambientais.
 
 .center[<img width="35%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Yi-qvTjseH5rPNfGTz1ple1EywaU7W0yJg&s">]
 ---
@@ -703,18 +704,6 @@ $EVI_2 = 2.5*(NIR-RED)/(NIR+(2.4*RED)+1)$
 ### Seleção dos modelos:
 - Critério de Informação de Akaike (AIC)
 
-
-
----
-# Capítulo II - Métodos
-##  Análise das respostas ao longo do gradiente de precipitação
-
-### - Dividimos o gradiente de MAP em cinco intervalos
-</br>
-### - Calculamos a variância do acoplamento para cada intervalo
-
-.center[<img width="37%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfJgKmzMIEMZ581Xbs0ZzdWlJbVz-gWVGKg&s">
-] 
 ---
 # Capítulo II - Resultados
 ### Resumo das métricas do EVI2
